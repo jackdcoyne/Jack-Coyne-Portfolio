@@ -247,7 +247,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -559,7 +559,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #1e6080;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1012,6 +1012,13 @@ section {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #37b3ed;
+}
+
+iframe {
+  width: 100%; /* Responsive width */
+  max-width: 640px; /* Maximum width */
+  height: 1094px; /* Adjusted height */
+  border: none; /* No border */
 }
 
 @keyframes animate-loading {
