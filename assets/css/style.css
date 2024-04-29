@@ -1090,38 +1090,8 @@ iframe {
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Cookie Consent Banner
 --------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
-
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-  }
-}
-
 #cookieConsentBanner {
   position: fixed;
   bottom: 0;
@@ -1132,32 +1102,76 @@ iframe {
   text-align: center;
   padding: 10px;
   z-index: 10000; /* High z-index to ensure visibility on top of other content */
+  display: flex; /* Use flexbox to align children inline */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 #cookieConsentBanner p {
-  margin: 10px 0;
+  margin: 0 10px 0 0; /* Remove bottom margin and add right margin for spacing */
+  font-size: 14px; /* Smaller font size */
+  flex-grow: 1; /* Allows the paragraph to fill the available space */
 }
 
 #cookieConsentBanner button {
   padding: 5px 10px;
-  margin: 0 10px;
+  margin-left: 10px; /* Only left margin to separate from the text */
   color: white;
   background-color: #4CAF50; /* Green background for accept button */
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  white-space: nowrap; /* Prevents text from wrapping inside buttons */
 }
 
 #cookieConsentBanner button:hover {
   background-color: #45a049;
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 12px; /* Adjusted to a smaller font size */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #040b14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centers items vertically in the footer */
+}
+
+#footer .copyright-credits,
 #footer .links {
-  text-align: center; /* Center align the links */
+  flex: 1; /* Each side takes up half of the footer */
+  text-align: center; /* Center text within each block */
 }
 
 #footer .links a {
-  display: inline-block; /* Display links as blocks */
-  margin: 0 10px; /* Add space between links */
-  text-decoration: none; /* Remove underline */
+  color: #149ddd;
+  text-decoration: none;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  #footer .links, #footer .copyright-credits {
+    text-align: center;
+    display: block;
+  }
+  #footer .links a {
+    margin-left: 0;
+    margin-top: 5px;
+  }
 }
