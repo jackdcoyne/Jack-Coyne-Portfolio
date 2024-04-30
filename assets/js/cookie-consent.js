@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Set cookie and hide banner on button click
     acceptButton.addEventListener("click", function() {
-        setCookie("consentGiven", "true", 365); // Set cookie for 365 days
+        setCookie("consentGiven", "true", 2); // Set cookie for 2 days
         consentBanner.style.display = 'none';
     });
 });
