@@ -1101,10 +1101,10 @@ iframe {
   color: white;
   text-align: center;
   padding: 10px;
-  z-index: 10000; /* High z-index to ensure visibility on top of other content */
-  display: flex; /* Use flexbox to align children inline */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cookieConsentBanner p {

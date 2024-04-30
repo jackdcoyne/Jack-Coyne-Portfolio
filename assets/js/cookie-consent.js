@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const consentBanner = document.querySelector(".cookieConsentBanner");
+    const consentBanner = document.getElementById("cookieConsentBanner");
     const acceptButton = document.getElementById("acceptButton");
 
     // Function to set a cookie
