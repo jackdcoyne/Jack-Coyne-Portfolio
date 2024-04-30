@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #0066cc;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #0055aa;
   text-decoration: none;
 }
 
@@ -274,7 +274,7 @@ h6 {
 #hero p {
   color: #fff;
   margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 21px;
   font-family: "Poppins", sans-serif;
   background-color: transparent;
 }
@@ -1113,6 +1113,11 @@ iframe {
   flex-grow: 1; /* Allows the paragraph to fill the available space */
 }
 
+#cookieConsentBanner a {
+  color: #149ddd; /* Sets link color to blue */
+  text-decoration: none; /* Optional: removes underline from links */
+}
+
 #cookieConsentBanner button {
   padding: 5px 10px;
   margin-left: 10px; /* Only left margin to separate from the text */
@@ -1157,6 +1162,10 @@ iframe {
   text-decoration: none;
   margin-left: 10px;
   white-space: nowrap;
+}
+
+#footer .copyright-credits .copyright-link {
+  color: #149ddd; /* Change to your desired color */
 }
 
 @media (max-width: 1199px) {
