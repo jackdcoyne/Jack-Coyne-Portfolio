@@ -1090,6 +1090,27 @@ iframe {
 }
 
 /*--------------------------------------------------------------
+# Custom Styles for Specific Profile Image
+--------------------------------------------------------------*/
+.custom-profile-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .custom-profile-img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-profile-img {
+    max-width: 150px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Cookie Consent Banner
 --------------------------------------------------------------*/
 #cookieConsentBanner {
